@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  main:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+  secondary:
+    build: .
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
